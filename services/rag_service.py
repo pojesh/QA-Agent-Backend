@@ -4,10 +4,10 @@ from typing import List, Dict, Any
 from langchain_groq import ChatGroq
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from backend.services.ingestion_service import get_vector_store
-from backend.services.prompts import TEST_CASE_GENERATION_PROMPT, SELENIUM_SCRIPT_GENERATION_PROMPT
-from backend.core.config import get_settings
-from backend.core.logging import logger
+from services.ingestion_service import get_vector_store
+from services.prompts import TEST_CASE_GENERATION_PROMPT, SELENIUM_SCRIPT_GENERATION_PROMPT
+from core.config import get_settings
+from core.logging import logger
 
 settings = get_settings()
 

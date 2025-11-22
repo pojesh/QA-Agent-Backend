@@ -5,8 +5,8 @@ from langchain_community.document_loaders import PyMuPDFLoader, UnstructuredMark
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_milvus import Milvus
-from backend.core.config import get_settings
-from backend.core.logging import logger
+from core.config import get_settings
+from core.logging import logger
 import tempfile
 import shutil
 

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Header
 from typing import List
-from backend.services.rag_service import generate_test_cases, generate_selenium_script
-from backend.api.schemas.generation import TestCaseRequest, TestCase, ScriptRequest, ScriptResponse
-from backend.core.logging import logger
+from services.rag_service import generate_test_cases, generate_selenium_script
+from api.schemas.generation import TestCaseRequest, TestCase, ScriptRequest, ScriptResponse
+from core.logging import logger
 
 router = APIRouter()
 

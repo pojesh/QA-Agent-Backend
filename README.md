@@ -70,7 +70,7 @@ You can run both the backend and frontend using the provided script:
 
 1.  **Start Backend**:
     ```bash
-    uvicorn backend.main:app --reload --port 8000
+    uvicorn main:app --reload --port 8000
     ```
 
 2.  **Start Frontend** (in a new terminal):

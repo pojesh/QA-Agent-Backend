@@ -1,8 +1,8 @@
 import os
 import shutil
 from fastapi import APIRouter, HTTPException, Header
-from backend.services.ingestion_service import get_vector_store
-from backend.core.logging import logger
+from services.ingestion_service import get_vector_store
+from core.logging import logger
 
 router = APIRouter()
 

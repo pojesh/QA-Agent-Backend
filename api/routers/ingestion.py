@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException, Header
 from typing import List
-from backend.services.ingestion_service import process_file
-from backend.api.schemas.ingestion import IngestResponse
-from backend.core.logging import logger
+from services.ingestion_service import process_file
+from api.schemas.ingestion import IngestResponse
+from core.logging import logger
 
 router = APIRouter()
 

@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from backend.core.config import get_settings
-from backend.core.logging import logger
+from core.config import get_settings
+from core.logging import logger
 
 settings = get_settings()
 
@@ -36,7 +36,7 @@ async def health_check():
     return {"status": "healthy", "version": settings.VERSION}
 
 # Import and include routers 
-from backend.api.routers import ingestion, generation, session
+from api.routers import ingestion, generation, session
 app.include_router(ingestion.router, prefix=f"{settings.API_PREFIX}/ingestion", tags=["Ingestion"])
 app.include_router(generation.router, prefix=f"{settings.API_PREFIX}/generation", tags=["Generation"])
 app.include_router(session.router, prefix=f"{settings.API_PREFIX}/session", tags=["Session"])
